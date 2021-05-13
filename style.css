@@ -1,0 +1,108 @@
+.cabecera {
+    background-image: url("img/cabecera.jpg");
+    height: 235px;
+}
+nav{
+    background-color: black;
+}
+.nav--li{
+    display: inline-block;
+    padding: 12px;
+    color: #fff;
+}
+.nav--li:hover{
+    color: blue;
+    cursor: pointer;
+}
+.nav--li a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav--li a:hover{
+    color: orange;
+}
+.nav--li i{
+    width: 20px;
+    box-sizing: border-box;
+    text-align: right;
+}
+.i-right{
+    float: right;
+}
+.cabecera-label{
+    background-color: orange;
+    border-radius: 15px;
+    font-size: 20px;
+    
+}
+.div-cabecera-label{
+    text-align: center;
+}
+.div-container{
+    text-align: center;
+    padding: 30px;
+    background-color:antiquewhite;
+    font-size: 20px;
+}
+.p-centrado{
+    padding-left: 20vw;
+    /*padding-left: 300px;*/
+    width: 50%;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.flex-container img{
+    
+    width: 250px;
+    margin: 2px 1px;
+}
+.flex-container img:hover{
+    opacity: 0.6;
+}
+#rotate1{
+    -webkit-transform:rotate(-15deg);
+    padding-top: 30px;
+}
+#rotate2{
+    z-index: 1;
+}
+#rotate3{
+    -webkit-transform:rotate(15deg);
+    padding-top: 30px;
+    z-index: 2;
+}
+
+/*Esto será para el responsive de movil*/
+@media only screen and (max-width: 1000px) {
+    .nav--li a{
+        display: none;
+    }
+    .i-right{
+        float:inherit;
+    }
+    .cabecera-label{
+        display: block;
+        margin: 15px;
+    }
+    .div-container{
+        padding: 5px;
+        font-size: 15px;
+    }
+    .flex-container img{
+        width: 150px;
+    }
+    .responsive-3 img{
+        width: 90px;
+    }
+    #rotate1{
+        padding-top:none;
+    }
+    #rotate3{
+        padding-top:none;
+        z-index:none;
+    }
+}
