@@ -112,11 +112,11 @@ nav{
 
 /*Esto será para el responsive de movil*/
 @media only screen and (max-width: 1000px) {
-    .nav--li a{
+    .nav--li i{
         display: none;
     }
-    .i-right{
-        float:inherit;
+    .nav--li a{
+        font-size: 10px;
     }
     .cabecera-label{
         display: block;
